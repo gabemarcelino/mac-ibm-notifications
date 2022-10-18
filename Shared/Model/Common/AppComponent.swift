@@ -19,15 +19,15 @@ enum AppComponent {
     var bundleName: String {
         switch self {
         case .core:
-            return "IBM Notifier"
+            return "OneMedical Notifier"
         case .alert:
-            return "IBM Notifier Alert"
+            return "OneMedical Notifier Alert"
         case .banner:
-            return "IBM Notifier Banner"
+            return "OneMedical Notifier Banner"
         case .onboarding:
-            return "IBM Notifier Onboarding"
+            return "OneMedical Notifier Onboarding"
         case .popup:
-            return "IBM Notifier Popup"
+            return "OneMedical Notifier Popup"
         }
     }
     var binaryPath: String {
@@ -43,15 +43,15 @@ enum AppComponent {
     }
     static var current: AppComponent {
         switch Bundle.main.bundleIdentifier! {
-        case "com.ibm.cio.notifier":
+        case "com.onemedical.notifier":
             return .core
-        case "com.ibm.cio.notifier.alert":
+        case "com.onemedical.notifier.alert":
             return .alert
-        case "com.ibm.cio.notifier.banner":
+        case "com.onemedical.notifier.banner":
             return .banner
-        case "com.ibm.cio.notifier.popup":
+        case "com.onemedical.notifier.popup":
             return .popup
-        case "com.ibm.cio.notifier.onboarding":
+        case "com.onemedical.notifier.onboarding":
             return .onboarding
         default:
             return .core
